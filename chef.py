@@ -12,6 +12,33 @@ def load_image2(url, resize_to=(250, 250)):
         return img
     except (requests.exceptions.RequestException, UnidentifiedImageError):
         return None
+st.markdown("""
+    <style>
+    .stButton > button {
+        background-color: #FFF4E6; /* Green */
+        border: none;
+        color: black;
+        padding: 8px 12px; /* Reduced padding for thinner button */
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+    }
+    .stButton > button:hover {
+        color: black; /* Text color becomes black on hover */
+    }
+    .stButton > button:active {
+        color: black; /* Text color becomes black when button is clicked */
+    }
+    .stButton.buy-cookbook > button {
+        background-color: #FFB6C1; /* Light Pink */
+    }
+    </style>
+    """, unsafe_allow_html=True)
+        
 
 st.title("Vegan AI for Chefs")
 
