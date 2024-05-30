@@ -61,7 +61,7 @@ if cook_level == "Homecook":
     st.write("Maximum Calories per serving")
     calories = st.number_input("", min_value=0, step=10)
 
-    st.write("Let's see what vegan goodies you have on hand!")
+    st.write("Let's see what raw vegan ingredients you have on hand!")
 
     # Display images for ingredient selection
     col1, col2, col3 = st.columns(3)
