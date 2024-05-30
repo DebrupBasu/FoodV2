@@ -53,7 +53,7 @@ if cook_level == "Homecook":
     cuisine_choice = st.selectbox("Do you have a specific cuisine in mind? (optional)", ["", "American", "Asian", "Italian", "Mexican", "Indian", "Other"])
 
     st.write("Got it! How much time do you have to whip up something tasty? Less than 30 mins, 30-60 mins, or more than an hour?")
-    cook_time_choice = st.selectbox("Cook Time", ["", "Less than 30 mins", "30-60 mins", "More than an hour"])
+    cook_time_choice = st.selectbox("Maximum Cooking Time", ["", "Less than 30 mins", "30-60 mins", "More than an hour"])
 
     # Ask about flavor profile
     flavor_profile = st.selectbox("What flavor profile are you looking for?", ["", "Savory", "Sweet", "Spicy", "Sour", "Herbal"])
