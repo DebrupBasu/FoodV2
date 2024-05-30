@@ -58,8 +58,8 @@ if cook_level == "Homecook":
     # Ask about flavor profile
     flavor_profile = st.selectbox("What flavor profile do you prefer?", ["", "Savory", "Sweet", "Spicy", "Sour", "Herbal"])
 
-    st.write("How many calories are you aiming for in this meal?")
-    calories = st.number_input("Calories", min_value=0, step=10)
+    st.write("Maximum Calories per serving")
+    calories = st.number_input("", min_value=0, step=10)
 
     st.write("Let's see what vegan goodies you have on hand!")
 
