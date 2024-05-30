@@ -1,6 +1,25 @@
+import streamlit as st
+import webbrowser
 
+def load_image2(url, resize_to=(600, 400)):
+    try:
+        response = requests.get(url)
+        response.raise_for_status()
+        img = Image.open(BytesIO(response.content))
+        img = img.resize(resize_to)
+        return img
+    except (requests.exceptions.RequestException, UnidentifiedImageError):
+        return None
 
-    # Recipe Ingredients
+# Load the image
+img_url = "https://sallysbakingaddiction.com/wp-content/uploads/2015/10/butternut-squash-mac-and-cheese-2.jpg"
+img = load_image2(img_url)
+
+# Display the image
+if img:
+    st.image(img, caption="Butternut Squash Mac and Cheese", use_column_width=True)
+
+# Recipe Ingredients
 ingredients = """
     ### Ingredients
     #### Mac and Cheese
@@ -34,7 +53,7 @@ ingredients = """
     """
 st.markdown(ingredients)
 
-    # Recipe Directions
+# Recipe Directions
 directions = """
     ### Directions
     #### Prep the Swiss Cheese
@@ -53,11 +72,10 @@ directions = """
 
 st.markdown(directions)
 
-    # Tips and Tricks
+# Tips and Tricks
 tips = """
     ### Tips and Tricks
     - To soak the cashews, place them in a small bowl and cover with 2 cups (500 mL) hot water for at least 1 hour or overnight, covered, and stored in the fridge. Drain and rinse the cashews, discarding the soaking liquid.
     """
 
 st.write(tips)
-
