@@ -1,5 +1,9 @@
 import streamlit as st
 import webbrowser
+import requests
+from PIL import Image
+from io import BytesIO
+from PIL import UnidentifiedImageError
 
 def load_image2(url, resize_to=(600, 400)):
     try:
