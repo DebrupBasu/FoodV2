@@ -13,7 +13,7 @@ st.markdown("""
     .stButton > button {
         background-color: #FFF4E6; /* Green */
         border: none;
-        color: white;
+        color: black;
         padding: 8px 12px; /* Reduced padding for thinner button */
         text-align: center;
         text-decoration: none;
