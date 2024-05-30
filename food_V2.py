@@ -6,6 +6,8 @@ from io import BytesIO
 
 import streamlit as st
 
+import streamlit as st
+
 st.markdown("""
     <style>
     .stButton > button {
@@ -24,11 +26,15 @@ st.markdown("""
     .stButton > button:hover {
         color: black; /* Text color becomes black on hover */
     }
+    .stButton > button:active {
+        color: black; /* Text color becomes black when button is clicked */
+    }
     .stButton.buy-cookbook > button {
         background-color: #FFB6C1; /* Light Pink */
     }
     </style>
     """, unsafe_allow_html=True)
+
 
 
 def load_image(url, resize_to=(100, 100)):
