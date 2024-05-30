@@ -21,6 +21,9 @@ st.markdown("""
         cursor: pointer;
         border-radius: 12px;
     }
+    .stButton > button:hover {
+        color: black; /* Text color becomes black on hover */
+    }
     .stButton.buy-cookbook > button {
         background-color: #FFB6C1; /* Light Pink */
     }
