@@ -1,11 +1,44 @@
 import streamlit as st
-from chef import run_chef_script2
+import streamlit as st
+from PIL import Image, UnidentifiedImageError
+import requests
+import subprocess
+from io import BytesIO
 
 def load_image(url, resize_to=(100, 100)):
-    # Define your image loading function here
-    pass
+    try:
+        response = requests.get(url)
+        response.raise_for_status()
+        img = Image.open(BytesIO(response.content))
+        img = img.resize(resize_to)
+        return img
+    except (requests.exceptions.RequestException, UnidentifiedImageError):
+        return None
 
-st.title("Vegan AI for Homecooks")
+def load_image2(url, resize_to=(250, 250)):
+    try:
+        response = requests.get(url)
+        response.raise_for_status()
+        img = Image.open(BytesIO(response.content))
+        img = img.resize(resize_to)
+        return img
+    except (requests.exceptions.RequestException, UnidentifiedImageError):
+        return None
+    
+def load_image3(url, resize_to=(100, 100)):
+    try:
+        response = requests.get(url)
+        response.raise_for_status()
+        img = Image.open(BytesIO(response.content))
+        img = img.resize(resize_to)
+        return img
+    except (requests.exceptions.RequestException, UnidentifiedImageError):
+        return None    
+
+def run_chef_script():
+    subprocess.run(["python", "chef.py"])        
+
+st.title("Vegan AI for Homecooks and Chefs")
 
 # Ask about cooking level
 cook_level = st.selectbox("What is your level of cooking experience?", ["", "Homecook", "Chef"])
@@ -101,4 +134,29 @@ if cook_level == "Homecook":
             st.write("- Add a touch of nutmeg for a warming flavor.")
             st.write("- Use nutritional yeast for a cheesy taste.")
         
-        st.write("**Cookbooks to Buy:** [Doug McNish's Cookbooks](https://www.amazon.com/stores/author/B00E5FEE5S/allbooks?ingress=0&visitId=131f99ec-8628-4c07-85cd-4f4dd8d2ff1d)")
+            st.write("**Cookbooks to Buy:** [Doug McNish's Cookbooks](https://www.amazon.com/stores/author/B00E5FEE5S/allbooks?ingress=0&visitId=131f99ec-8628-4c07-85cd-4f4dd8d2ff1d)")
+  if cook_level == "Chef":
+    st.header("**Services:**")
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.write("Product Development and Culinary Services")
+        st.image(load_image3("https://hospitalityinsights.ehl.edu/hubfs/Blog-EHL-Insights/Blog-Header-EHL-Insights/commercial%20food.jpeg"), caption="")
+        st.write("- [Development of Consumer Packaged Goods](https://www.dougmcnish.com/services)")
+        menu_link = st.markdown("[Menu & Recipe Development](#)", unsafe_allow_html=True)
+        st.write("- [Food Costing & Menu Engineering](https://www.dougmcnish.com/services)")
+
+        if menu_link:
+          run_chef_script()
+
+    with col2:
+        st.write("Brand Promotion and Representation")
+        st.image(load_image3("https://ignitizeconsulting.com/wp-content/uploads/2019/06/branding-sales.jpg"), caption="")
+        st.write("- [Cooking Demo & Brand Representation](https://www.dougmcnish.com/services)")
+        st.write("- [Tradeshow Representation](https://www.dougmcnish.com/services)")
+
+    with col3:
+        st.write("Operational Efficiency and Consulting")
+        st.image(load_image3("https://assets-global.website-files.com/5e8bd2ab8e48e69429cb4fd8/62962735a52a147a3fcdc6dd_illustration_management-consultants.png"), caption="")
+        st.write("- [Systems + Operations](https://www.dougmcnish.com/services)")
+        st.write("- [Executive Chef Coaching](https://www.dougmcnish.com/services)")
+        st.write("- [Food Consulting Call: Consulting for culinary and operational challenges](https://www.dougmcnish.com/schedule-a-1-on-1-call)")
