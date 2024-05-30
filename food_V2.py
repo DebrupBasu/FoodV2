@@ -137,7 +137,7 @@ if cook_level == "Homecook":
             st.write("- Use nutritional yeast for a cheesy taste.")
         
             st.write("**Cookbooks to Buy:** [Doug McNish's Cookbooks](https://www.amazon.com/stores/author/B00E5FEE5S/allbooks?ingress=0&visitId=131f99ec-8628-4c07-85cd-4f4dd8d2ff1d)")
-  if cook_level == "Chef":
+if cook_level == "Chef":
     st.header("**Services:**")
     col1, col2, col3 = st.columns(3)
     with col1:
