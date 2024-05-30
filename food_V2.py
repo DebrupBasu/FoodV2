@@ -56,7 +56,7 @@ if cook_level == "Homecook":
     cook_time_choice = st.selectbox("Maximum Cooking Time", ["", "Less than 30 mins", "30-60 mins", "More than an hour"])
 
     # Ask about flavor profile
-    flavor_profile = st.selectbox("What flavor profile are you looking for?", ["", "Savory", "Sweet", "Spicy", "Sour", "Herbal"])
+    flavor_profile = st.selectbox("What flavor profile do you prefer?", ["", "Savory", "Sweet", "Spicy", "Sour", "Herbal"])
 
     st.write("How many calories are you aiming for in this meal?")
     calories = st.number_input("Calories", min_value=0, step=10)
