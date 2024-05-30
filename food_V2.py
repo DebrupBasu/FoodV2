@@ -4,6 +4,27 @@ import requests
 import subprocess
 from io import BytesIO
 
+st.markdown("""
+    <style>
+    .stButton > button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+    }
+    .stButton.buy-cookbook > button {
+        background-color: #FFA500; /* Orange */
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
 def load_image(url, resize_to=(100, 100)):
     try:
         response = requests.get(url)
@@ -129,10 +150,13 @@ if cook_level == "Homecook":
             st.subheader("Creamy Butternut Squash Mac and Cheese")
             img_url = "https://sallysbakingaddiction.com/wp-content/uploads/2015/10/butternut-squash-mac-and-cheese-2.jpg"
             st.markdown(f'<img src="{img_url}" alt="Creamy Butternut Squash Mac and Cheese" style="width:400px;height:300px;">', unsafe_allow_html=True)
-            purchase_option = st.markdown("[Recipe Purchase and Get Tips & Tricks Video for $1](#)", unsafe_allow_html=True)
-            if purchase_option:
-                run_chef_script2()   
-            st.write("[Buy Chef Doug's Cookbooks](https://www.amazon.com/stores/author/B00E5FEE5S/allbooks?ingress=0&visitId=131f99ec-8628-4c07-85cd-4f4dd8d2ff1d)")
+            if st.button("Recipe Purchase and Get Tips & Tricks Video for $1"):
+            #purchase_option = st.markdown("[Recipe Purchase and Get Tips & Tricks Video for $1](#)", unsafe_allow_html=True)
+            #if purchase_option:
+                run_chef_script2()
+            if st.button("Buy Chef Doug's Cookbooks"):
+                st.markdown("<div class='stButton buy-cookbook'><a href='https://www.amazon.com/stores/author/B00E5FEE5S/allbooks?ingress=0&visitId=131f99ec-8628-4c07-85cd-4f4dd8d2ff1d' target='_blank'>Buy Chef Doug's Cookbooks</a></div>", unsafe_allow_html=True)    
+            #st.write("[Buy Chef Doug's Cookbooks](https://www.amazon.com/stores/author/B00E5FEE5S/allbooks?ingress=0&visitId=131f99ec-8628-4c07-85cd-4f4dd8d2ff1d)")
 if cook_level == "Chef":
     st.header("**Services:**")
     col1, col2, col3 = st.columns(3)
