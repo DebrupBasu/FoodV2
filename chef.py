@@ -1,10 +1,10 @@
 import streamlit as st
 
-st.title("Vegan AI for Homecooks and Chefs")
+st.title("Vegan AI for Chefs")
 
 meal_choice = st.selectbox("What are you planning to make?", ["", "Breakfast", "Lunch", "Dinner", "Dessert"])
 cuisine_choice = st.selectbox("Do you have a specific cuisine in mind? (optional)", ["", "American", "Asian", "Italian", "Mexican", "Indian", "Other"])
-flavor_profile = st.selectbox("What flavor profile are you looking for?", ["", "Savory", "Sweet", "Spicy", "Sour", "Herbal"])
+flavor_profile = st.selectbox("What flavor profile do you prefer?", ["", "Savory", "Sweet", "Spicy", "Sour", "Herbal"])
 
 st.write("Professional Vegan Chef's Recipe and Recommendation")
 
