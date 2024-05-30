@@ -102,7 +102,7 @@ if cook_level == "Homecook":
 
     selected_ingredients = {}
     # Button to get recommendations
-    if st.button("Get Chef Dough's Recipe Recommendations"):
+    if st.button("Get Chef Doug's Recipe Recommendations"):
         selected_ingredients = {
             "Vegetables": vegetables,
             "Starchy Base": starchy_base,
