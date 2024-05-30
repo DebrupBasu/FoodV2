@@ -11,7 +11,7 @@ import streamlit as st
 st.markdown("""
     <style>
     .stButton > button {
-        background-color: #4CAF50; /* Green */
+        background-color: #FFB6C1; /* Green */
         border: none;
         color: white;
         padding: 8px 12px; /* Reduced padding for thinner button */
