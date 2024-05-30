@@ -140,7 +140,7 @@ if cook_level == "Chef":
         st.write("Product Development and Culinary Services")
         st.image(load_image3("https://hospitalityinsights.ehl.edu/hubfs/Blog-EHL-Insights/Blog-Header-EHL-Insights/commercial%20food.jpeg"), caption="")
         st.write("- [Development of Consumer Packaged Goods](https://www.dougmcnish.com/services)")
-        menu_link = st.markdown("[Menu & Recipe Development](#)", unsafe_allow_html=True)
+        menu_link = st.markdown("- [Menu & Recipe Development](#)", unsafe_allow_html=True)
         st.write("- [Food Costing & Menu Engineering](https://www.dougmcnish.com/services)")
 
         if menu_link:
