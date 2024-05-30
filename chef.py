@@ -55,7 +55,7 @@ if cuisine_choice in ["", "Asian"] and meal_choice in ["Lunch", "Dinner"] and fl
     st.image(img, caption="Szechuan Tofu Stir Fry")
     import webbrowser
     if st.button("Buy Chef Doug's Cookbooks"):
-    webbrowser.open_new_tab('https://www.amazon.com/stores/author/B00E5FEE5S/allbooks?ingress=0&visitId=131f99ec-8628-4c07-85cd-4f4dd8d2ff1d') 
+       webbrowser.open_new_tab('https://www.amazon.com/stores/author/B00E5FEE5S/allbooks?ingress=0&visitId=131f99ec-8628-4c07-85cd-4f4dd8d2ff1d') 
 
 if cuisine_choice in ["", "Italian"] and meal_choice in ["Lunch", "Dinner"] and flavor_profile in ['Savory', 'Herbal']:
     st.subheader("**Recipe:** Vegan Mushroom Risotto")
