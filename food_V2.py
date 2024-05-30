@@ -14,7 +14,7 @@ st.markdown("""
         background-color: #4CAF50; /* Green */
         border: none;
         color: white;
-        padding: 8px 16px; /* Reduced padding for thinner button */
+        padding: 8px 12px; /* Reduced padding for thinner button */
         text-align: center;
         text-decoration: none;
         display: inline-block;
