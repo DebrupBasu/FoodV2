@@ -1,5 +1,15 @@
 import streamlit as st
 
+def load_image2(url, resize_to=(250, 250)):
+    try:
+        response = requests.get(url)
+        response.raise_for_status()
+        img = Image.open(BytesIO(response.content))
+        img = img.resize(resize_to)
+        return img
+    except (requests.exceptions.RequestException, UnidentifiedImageError):
+        return None
+
 st.title("Vegan AI for Chefs")
 
 meal_choice = st.selectbox("What are you planning to make?", ["", "Breakfast", "Lunch", "Dinner", "Dessert"])
