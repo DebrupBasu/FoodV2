@@ -4,13 +4,15 @@ import requests
 import subprocess
 from io import BytesIO
 
+import streamlit as st
+
 st.markdown("""
     <style>
     .stButton > button {
         background-color: #4CAF50; /* Green */
         border: none;
         color: white;
-        padding: 10px 20px;
+        padding: 8px 16px; /* Reduced padding for thinner button */
         text-align: center;
         text-decoration: none;
         display: inline-block;
@@ -20,10 +22,11 @@ st.markdown("""
         border-radius: 12px;
     }
     .stButton.buy-cookbook > button {
-        background-color: #FFA500; /* Orange */
+        background-color: #FFB6C1; /* Light Pink */
     }
     </style>
     """, unsafe_allow_html=True)
+
 
 def load_image(url, resize_to=(100, 100)):
     try:
