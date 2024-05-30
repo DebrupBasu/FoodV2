@@ -35,7 +35,10 @@ def load_image3(url, resize_to=(100, 100)):
         return None    
 
 def run_chef_script():
-    subprocess.run(["python", "chef.py"])        
+    subprocess.run(["python", "chef.py"]) 
+
+def run_chef_script2():
+    subprocess.run(["python", "recipe.py"])    
 
 st.title("Vegan AI for Homecooks and Chefs")
 
