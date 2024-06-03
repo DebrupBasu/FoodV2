@@ -114,7 +114,7 @@ ingredients = {
     "Vegetables": [
         {"name": "Butternut Squash", "image": [
             "Ingredients/butternut_squash.jpg",
-            ""Ingredients/butternut_squash2.JPEG"
+            "Ingredients/butternut_squash2.JPEG"
         ]}
     ],
     "Starchy Base": [
