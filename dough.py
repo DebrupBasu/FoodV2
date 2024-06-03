@@ -112,63 +112,63 @@ def compare_images(img1, img2):
     
 ingredients = {
     "Vegetables": [
-        {"name": "butternut squash", "image": [
-            "C:\\Users\\Mike Lee\\Downloads\\Ingredients\\butternut_squash.jpg",
-            "C:\\Users\\Mike Lee\\Downloads\\Ingredients\\butternut_squash2.JPEG"
+        {"name": "Butternut Squash", "image": [
+            "Ingredients/butternut_squash.jpg",
+            ""Ingredients/butternut_squash2.JPEG"
         ]}
     ],
     "Starchy Base": [
-        {"name": "pasta", "image": [
-            "C:\\Users\\Mike Lee\\Downloads\\Ingredients\\pasta1.jpg",
-            "C:\\Users\\Mike Lee\\Downloads\\Ingredients\\pasta2.webp",
-            "C:\\Users\\Mike Lee\\Downloads\\Ingredients\\pasta3.jpg",
-            "C:\\Users\\Mike Lee\\Downloads\\Ingredients\\pasta4.jpg",
-            "C:\\Users\\Mike Lee\\Downloads\\Ingredients\\pasta5.jpg",
-            "C:\\Users\\Mike Lee\\Downloads\\Ingredients\\pasta6.JPEG",
-            "C:\\Users\\Mike Lee\\Downloads\\Ingredients\\pasta7.jpg"
+        {"name": "Pasta", "image": [
+            "Ingredients/pasta1.jpg",
+            "Ingredients/pasta2.webp",
+            "Ingredients/pasta3.jpg",
+            "Ingredients/pasta4.jpg",
+            "Ingredients/pasta5.jpg",
+            "Ingredients/pasta6.JPEG",
+            "Ingredients/pasta7.jpg"
         ]}
     ],
     "Protein Source": [
-        {"name": "nutritional yeast", "image": [
-            "C:\\Users\\Mike Lee\\Downloads\\Ingredients\\yeast.webp",
-            "C:\\Users\\Mike Lee\\Downloads\\Ingredients\\yeast2.jpg",
-            "C:\\Users\\Mike Lee\\Downloads\\Ingredients\\yeast3.jpg",
-            "C:\\Users\\Mike Lee\\Downloads\\Ingredients\\yeast4.jpg",
-            "C:\\Users\\Mike Lee\\Downloads\\Ingredients\\yeast5.webp",
-            "C:\\Users\\Mike Lee\\Downloads\\Ingredients\\yeast6.JPEG",
-            "C:\\Users\\Mike Lee\\Downloads\\Ingredients\\yeast7.jpg"
+        {"name": "Nutritional Yeast", "image": [
+            "Ingredients/yeast.webp",
+            "Ingredients/yeast2.jpg",
+            "Ingredients/yeast3.jpg",
+            "Ingredients/yeast4.jpg",
+            "Ingredients/yeast5.webp",
+            "Ingredients/yeast6.JPEG",
+            "Ingredients/yeast7.jpg"
         ]}
     ],
     "Nuts/Seeds": [
-        {"name": "mustard seed", "image": [
-            "C:\\Users\\Mike Lee\\Downloads\\Ingredients\\MustardSeed.JPEG",
-            "C:\\Users\\Mike Lee\\Downloads\\Ingredients\\MustardSeed2.jpg"
+        {"name": "Mustard Seed", "image": [
+            "Ingredients/MustardSeed.JPEG",
+            "Ingredients/MustardSeed2.jpg"
         ]},
-        {"name": "cashewnuts", "image": [
-            "C:\\Users\\Mike Lee\\Downloads\\Ingredients\\Cashewnuts.JPEG",
-            "C:\\Users\\Mike Lee\\Downloads\\Ingredients\\Cashewnuts2.JPEG"
+        {"name": "Cashewnuts", "image": [
+            "Ingredients/Cashewnuts.JPEG",
+            "Ingredients/Cashewnuts2.JPEG"
         ]}
     ],
     "Fruits": [],
     "Others (Vegan Dairy Products, Oil etc)": [
         {"name": "butter", "image": [
-            "C:\\Users\\Mike Lee\\Downloads\\Ingredients\\butter1.jpg",
-            "C:\\Users\\Mike Lee\\Downloads\\Ingredients\\butter2.jpg",
-            "C:\\Users\\Mike Lee\\Downloads\\Ingredients\\butter3.jpg",
-            "C:\\Users\\Mike Lee\\Downloads\\Ingredients\\butter4.jpg",
-            "C:\\Users\\Mike Lee\\Downloads\\Ingredients\\butter5.jpg"
+            "Ingredients/butter1.jpg",
+            "Ingredients/butter2.jpg",
+            "Ingredients/butter3.jpg",
+            "Ingredients/butter4.jpg",
+            "Ingredients/butter5.jpg"
         ]}
     ],
     "Seasoning": [
 
-        {"name": "breadcrumbs", "image": [
-            "C:\\Users\\Mike Lee\\Downloads\\Ingredients\\BreadCrumbs.JPEG"
+        {"name": "Breadcrumbs", "image": [
+            "Ingredients/BreadCrumbs.JPEG"
         ]},
-        {"name": "garlic powder", "image": [
-            "C:\\Users\\Mike Lee\\Downloads\\Ingredients\\GarlicPowder.JPEG"
+        {"name": "Garlic Powder", "image": [
+            "Ingredients/GarlicPowder.JPEG"
         ]},
-        {"name": "salt", "image": [
-            "C:\\Users\\Mike Lee\\Downloads\\Ingredients\\Salt.JPEG"
+        {"name": "Salt", "image": [
+            "Ingredients/Salt.JPEG"
         ]}
     ]
 }
