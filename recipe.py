@@ -1,5 +1,4 @@
 import streamlit as st
-import webbrowser
 import requests
 from PIL import Image
 from io import BytesIO
@@ -26,52 +25,41 @@ if img:
 # Recipe Ingredients
 ingredients = """
     ### Ingredients
-    #### Mac and Cheese
-    - 1 cup (250 mL) roughly chopped white onion
-    - 1 cup (250 mL) deodorized coconut oil
-    - 1 cup (250 mL) all-purpose flour
-    - ¹⁄₃ cup (75 mL) semi-sweet white wine, such as Riesling
-    - 5 cups (1.25 L) unsweetened almond milk
-    - ³⁄4 cup (175 mL) nutritional yeast
-    - 2 teaspoons (10 mL) garlic powder
-    - 2 teaspoons (10 mL) sea salt
-    - ¹⁄2 teaspoon (2 mL) brown rice miso, or any type of miso
-    - ¹⁄4 cup (60 mL) Swiss Cheese (recipe follows)
-    - 1 pound (450 g) dried elbow macaroni
-    - ¹⁄2 cup (125 mL) panko crumbs
-
-    #### Swiss Cheese
-    - 1 cup (250 mL) water
-    - 1 tablespoon (15 mL) agar powder
-    - 1 cup (250 mL) raw cashews, soaked and drained (see Tip)
-    - ¹⁄4 cup (60 mL) unsweetened almond milk
-    - ¹⁄₃ cup (75 mL) semi-sweet white wine, such as Riesling
-    - 2 tablespoons (30 mL) freshly squeezed lemon juice
-    - 2 tablespoons (30 mL) unpasteurized apple cider vinegar
-    - 2 teaspoons (10 mL) Dijon mustard
-    - 1¹⁄2 teaspoons (7 mL) nutritional yeast
-    - 1¹⁄2 teaspoons (7 mL) sea salt
-    - 1¹⁄2 teaspoons (7 mL) tahini
-    - ¹⁄4 teaspoon (1 mL) ground mustard powder
-    - ¹⁄8 teaspoon (0.5 mL) brown rice miso
+    - 1 medium butternut squash, peeled, seeded, and cubed
+    - 2 large potatoes, peeled and cubed
+    - 2 large carrots, peeled and sliced
+    - 1 large onion, chopped
+    - 1 cup raw cashews, soaked in water for at least 2 hours
+    - 1/4 cup deodorized coconut oil
+    - 1/2 cup nutritional yeast (NOOCH)
+    - 2 teaspoons garlic powder
+    - 2 teaspoons onion powder
+    - 1 teaspoon smoked paprika
+    - 1/2 teaspoon turmeric (optional, for color)
+    - 1 teaspoon mustard seed powder
+    - 1 tablespoon agar powder
+    - 1/2 cup panko crumbs
+    - Salt and pepper, to taste
+    - 1 pound pasta of your choice (gluten-free)
     """
 st.markdown(ingredients)
 
 # Recipe Directions
 directions = """
     ### Directions
-    #### Prep the Swiss Cheese
-    1. In a small pot, combine the water and agar powder. Bring to a boil, reduce the heat to a simmer, and cook until reduced by half, about 10 minutes. Set aside.
-    2. In a high-speed blender, combine the soaked cashews, almond milk, white wine, lemon juice, apple cider vinegar, mustard, nutritional yeast, salt, tahini, mustard powder, and miso. Blend on high speed until smooth. Add the agar mixture and blend until no lumps remain.
-    3. Transfer to a shallow container. Refrigerate until set, about 2 hours. Serve immediately or store in an airtight container in the fridge for up to 10 days.
+    #### Prepare the Vegetables
+    1. In a large pot, add the butternut squash, potatoes, carrots, and onion. Cover with water and bring to a boil. Cook until the vegetables are tender, about 15-20 minutes. Drain and set aside.
 
-    #### Make the Mac and Cheese
-    1. Preheat the oven to 400°F (200°C).
-    2. In a medium pot, over medium heat, combine the onion, coconut oil, and flour. Cook, stirring frequently, for 6 to 8 minutes. Remove the pot from the heat, add the white wine, and stir constantly for about 2 minutes to help remove some of the grittiness from the flour and to make a thick paste. Add the almond milk in a constant, steady stream while whisking at the same time. Whisk until no lumps remain, 1 to 2 minutes.
-    3. Return the pot to medium-high heat and add the nutritional yeast, garlic powder, salt, and miso. Bring the mixture to a boil, stirring frequently. Reduce the heat to a simmer and cook for 2 to 3 minutes to help remove some of the raw taste from the flour.
-    4. Remove the pot from the heat and stir in the Swiss cheese. In batches, transfer the sauce to a blender, taking care not to fill the blender more than halfway with the hot sauce, and blend until completely smooth. Transfer the sauce to a large, clean pot.
-    5. Bring a large pot of salted water to a rapid boil. Cook the macaroni according to package directions. Drain the pasta in a colander, then rinse with cold running water until the pasta is cold.
-    6. Add the cooked pasta to the cheese sauce and stir to combine. Transfer the mixture to an 11- × 7-inch (2 L) glass or metal baking dish. Top with the panko and bake until bubbling hot in the middle and golden brown on top, 25 to 30 minutes. Remove from the oven and allow to sit for 10 minutes before serving. Allow leftover mac and cheese to cool completely and store in an airtight container in the fridge for up to 1 week.
+    #### Blend the Sauce
+    2. In a high-speed blender, combine the cooked vegetables, soaked and drained cashews, coconut oil, nutritional yeast, garlic powder, onion powder, smoked paprika, turmeric, mustard seed powder, and agar powder. Blend until smooth and creamy. If the mixture is too thick, add water or vegetable broth, a little at a time, until the desired consistency is reached. Season with salt and pepper to taste.
+
+    #### Cook the Pasta
+    3. While preparing the sauce, cook the pasta according to the package instructions. Drain and set aside.
+
+    #### Combine and Serve
+    4. In a large pot, combine the cooked pasta and the butternut squash sauce. Stir well to coat the pasta evenly with the sauce. Heat over medium-low heat until warmed through.
+    5. Transfer to a baking dish, sprinkle with panko crumbs, and bake at 375°F (190°C) until the top is golden and crispy, about 10-15 minutes.
+    6. Serve the mac and cheese hot, garnished with additional nutritional yeast or smoked paprika if desired.
     """
 
 st.markdown(directions)
