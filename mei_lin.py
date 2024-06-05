@@ -21,7 +21,7 @@ def load_image3(url, resize_to=(200, 200)):
 
 
 def recommend_recipe():
-    image_path = "C:\\Users\\Mike Lee\\Downloads\\logo.png"
+    image_path = "logo.png"
     image = Image.open(image_path)
 
     # Convert the image to RGB format
