@@ -1,3 +1,4 @@
 tensorflow
 keras
 streamlit_extras
+streamlit_image_select
